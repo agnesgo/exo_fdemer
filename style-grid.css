@@ -9,7 +9,7 @@ div {
     background-color: black;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 3fr 1fr 10fr 2fr;
     grid-template-areas:
         "header_logo header_titre header_bouton"
@@ -33,8 +33,15 @@ div {
     align-content: center;
 }
 
-.telecharger{background-color: black;color: white ;
-
+.telecharger{background-color: black;
+    color: white ;
+    padding: 10px; 
+    border-radius: 8%
+}
+.connecter {background-color: black;
+    color: white;
+    padding: 10px; 
+    border-radius: 8%
 }
 
 .logo {
@@ -44,23 +51,29 @@ div {
     align-items: center;
 }
 
-.sous-menu{display: flex;
-}
 nav {
-    background-color: white;
+    background-color: black;
+    color: cyan;
     grid-area: nav;
     justify-content: space-around;
     display: flex; align-items: center;
 }
-
-
 
 main {
     background-color: rgb(19, 19, 17);
     grid-area: main; 
     align-content: center;
 }
+
+.fond{
+    height: auto;
+    width: 100vw;
+}
+
 footer {
-    background-color: blue;
+    background-color: black;
+    color: white;
     grid-area: footer; max-height: 50%;
+    justify-content: space-between; 
+    
 }
