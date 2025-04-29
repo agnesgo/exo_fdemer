@@ -1,3 +1,8 @@
+/**{
+    margin: 0;
+    padding: 0;
+}*/
+
 @font-face {
     font-family: "DMSerif" ;
     src: url(assets/fonts/DMSerifDisplay-Regular.ttf);}
@@ -13,7 +18,7 @@ div {
 }
 
 #parent {
-    background: url(images/ciel.PNG) center/cover no-repeat;
+    /*background: url(images/ciel.PNG) center/cover no-repeat;
     /*background-size:cover;
     background-repeat: no-repeat;
     background-position: 100% ;*/
@@ -29,7 +34,16 @@ div {
     height: 90vh;
 }
 
-header{
+#header{
+    background: url(images/ciel.PNG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex ;
+    height: auto;
+    width: 100vw;
+
+    
     
 }
 
@@ -38,6 +52,9 @@ header{
 }
 #header_titre{
     grid-area: 'header_titre'; 
+    line-height: 0.1rem;
+    text-align: center;
+    
     
 }
 #header_bouton{grid-area: "header_bouton";
@@ -68,9 +85,9 @@ header{
     padding: 15px; 
     border-radius: 10%;
 }
-a{color: cyan;
+.item{color: cyan;
 }
-a:hover{color: white;}
+.item:hover{color: white;}
 
 nav {
     grid-area: nav;
@@ -102,4 +119,7 @@ footer {
     display: flex;
     align-items: center;
     padding: 15px; 
+}
+.ft{
+    color: white;
 }
